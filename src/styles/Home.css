@@ -1,0 +1,69 @@
+.app-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.home {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+
+}
+.home-left,
+.home-right {
+  width: 50%;
+  display: flex;
+  justify-content: center; /* centra horizontal */
+  align-items: center;     /* centra vertical */
+}
+
+.home-logo {
+    width: 450px;
+
+}
+.home {
+  display: flex;
+  flex: 1;
+  background: black;
+  color: #21cf21;
+  font-family: monospace;
+}
+
+.home-left,
+.home-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-right{
+    justify-content: left;
+    padding-left: 50px;
+    align-items: flex-start;
+}
+/* terminal */
+.terminal {
+  max-width: 500px;
+  width: 100%;
+  font-size: 22px;
+}
+
+/* prompt */
+.prompt {
+  color: #00ff9c;
+  font-weight: bold;
+}
+
+/* output */
+.output {
+  color: #a8ffb0;
+  margin: 5px 0 10px 0;
+}
+
+/* líneas */
+.terminal p {
+  margin: 4px 0;
+}

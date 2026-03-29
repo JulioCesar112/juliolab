@@ -1,0 +1,24 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: "Fira Mono", "Courier New", monospace;
+  background-color: #000000;
+  color: #2cc32c;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit; /* hereda el color (adiós azul) */
+}
+
+/* LISTAS */
+ul, ol {
+  list-style: none;
+}
