@@ -1,13 +1,33 @@
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css"
+import { ImLab } from "react-icons/im";
+import { FaGithub } from "react-icons/fa";
+import { MdDarkMode } from "react-icons/md";
+
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1 className="navbar-logo">@Juliolab:~$</h1>
+
+      <div className="navbar-logo-container">
+        <h1 className="navbar-logo">
+          <ImLab className="navbar-iconlab" />
+          Julio<span className="nav-span">LAB</span>
+        </h1>
+      </div>
+
       <div className="navbar-links">
-        <Link>cd home/</Link>
-        <Link>cd Projects/</Link>
-        <Link>cd about/</Link>
+        <Link className="navlink">Inicio</Link>
+        <Link className="navlink">Proyectos</Link>
+        <Link className="navlink">Tutoriales</Link>
+        <Link className="navlink">Linux</Link>
+        <Link className="navlink">Sobre Mi</Link>
+        <Link className="navlink">Contacto</Link>
+      </div>
+
+      <div className="navbar-icons">
+        <MdDarkMode className="navbar-icons-darkmode" />
+        <FaGithub className="navbar-icons-github" />
+        <button className="navbar-icons-btn">Contacto</button>
       </div>
     </nav>
   );
