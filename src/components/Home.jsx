@@ -20,7 +20,8 @@ const Home = () => {
         </h4>
 
         <p className="hero-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, consequatur illum, blanditiis reprehenderit nesciunt eaque similique fugiat dolorem maiores itaque maxime ducimus cum sunt. Id quaerat quis esse consequuntur at?
+          Este es mi laboratorio digital donde construyo, experimento y comparto lo que aprendo
+sobre backend, Linux y desarrollo. Todo lo que ves aquí forma parte de mi proceso.
         </p>
 
         <ul className="hero-tech">
@@ -48,15 +49,25 @@ const Home = () => {
 
           <div className="terminal-body">
             <p className="comand">&gt; whoami</p>
-            <p>informacion de whoami</p>
-            <p className="comand">&gt; cat habilidades.txt </p>
+            <p>Julio Cesar - Dev & SysAdmin</p>
+            <p className="comand">&gt; cat lab_status.txt </p>
+            <p>Creando contenido sobre:</p>
             <ul>
-              <li> - habilidad</li>
-              <li> - habilidad</li>
-              <li> - habilidad</li>
-              <li> - habilidad</li>
+              <li> - Backend</li>
+              <li> - Linux</li>
+              <li> - APIs</li>
+              <li> - Automatización</li>
             </ul>
-            <p className="comand">&gt; _</p>
+
+            <p className="comand">&gt; ls contenido</p>
+            <ul>
+              <li>tutoriales/</li>
+              <li>Proyectos/</li>
+              <li>Notas/</li>
+            </ul>
+            <p className="comand">&gt; echo <span className="com-miss">$MISSION</span> </p>
+            <p>Construir y compartir conocimiento</p>
+            <p className="comand ">&gt; <span className="blink"> _</span></p>
           </div>
         </div>
 
