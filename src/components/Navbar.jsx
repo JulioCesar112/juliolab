@@ -19,13 +19,10 @@ const Navbar = () => {
         <Link className="navlink">Inicio</Link>
         <Link className="navlink">Proyectos</Link>
         <Link className="navlink">Tutoriales</Link>
-        <Link className="navlink">Linux</Link>
         <Link className="navlink">Sobre Mi</Link>
-        <Link className="navlink">Contacto</Link>
       </div>
 
       <div className="navbar-icons">
-        <MdDarkMode className="navbar-icons-darkmode" />
         <FaGithub className="navbar-icons-github" />
         <button className="navbar-icons-btn">Contacto</button>
       </div>

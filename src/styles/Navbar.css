@@ -4,9 +4,12 @@
   justify-content: space-between;
   padding: 15px;
   margin-top: 20px;
-  
+
 }
-.navbar-logo-container{
+
+.navbar-logo-container {
+  display: flex;
+  justify-content:center;
   width: 25%;
   padding-left: 50px;
 }
@@ -15,21 +18,24 @@
   display: flex;
   color: white;
   gap: 10px;
+  cursor: pointer;
 }
-.navbar-iconlab{
+
+.navbar-iconlab {
   color: rgba(30, 221, 30, 0.977)
 }
 
 
-.nav-span{
-  padding-top:10px ;
+.nav-span {
+  padding-top: 10px;
   font-size: 20px;
   color: rgba(30, 221, 30, 0.977);
 }
 
+/*  LINKS */
 
-.navbar-links{
-  width:50% ;
+.navbar-links {
+  width: 50%;
   display: flex;
   color: white;
   justify-content: space-around;
@@ -41,32 +47,32 @@
 
 }
 
-.navlink:hover{
-  transform: scale(1.1);
+.navlink:hover {
   color: rgba(30, 221, 30, 0.977);
 }
 
 
 
 
-
+/* ICONOS*/
 
 .navbar-icons {
   display: flex;
   align-items: center;
-  justify-content:end;
-  gap: 30px;
-  padding-right:50px ;
- width: 25%;
+  justify-content: center;
+  gap: 50px;
+  width: 25%;
 }
-.navbar-icons-github,
-.navbar-icons-darkmode{
- font-size: 30px;
- color: white;
+
+.navbar-icons-github {
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
 }
-.navbar-icons-btn{
+
+.navbar-icons-btn {
   all: unset;
-  color:rgba(30, 221, 30, 0.977);
+  color: rgba(30, 221, 30, 0.977);
   width: 110px;
   height: 30px;
   border: 1px solid rgba(30, 221, 30, 0.977);
@@ -74,9 +80,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.5s ease;
+  cursor: pointer;
+  transition: transform 0.1s ease;
 }
 
-.navbar-icons-btn:hover{
+.navbar-icons-btn:hover {
   box-shadow: 0 0 12px #22C55E;
+  transform: scale(1.05);
 }

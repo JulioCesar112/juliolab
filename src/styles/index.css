@@ -8,7 +8,9 @@
 /* BODY */
 body {
   font-family: "Fira Mono", "Courier New", monospace;
-  color: #2cc32c;
+  background-color: rgb(14, 14, 41);
+  color: white;
+
 }
 
 /* LINKS */
@@ -20,4 +22,7 @@ a {
 /* LISTAS */
 ul, ol {
   list-style: none;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
 }
