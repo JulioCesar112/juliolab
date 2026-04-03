@@ -8,8 +8,10 @@
     flex: 1;
     /* ocupa todo el espacio que sobra debajo del navbar */
     display: flex;
+    flex-wrap: wrap;
     /* para dividir hero y hero-logo en fila */
     overflow: hidden;
+    justify-content: center;
 }
 
 .hero {
@@ -86,47 +88,54 @@
 }
 
 .terminal {
-    width: 75%;
-    height: 55%;
+    width: 100%;
+    max-width: 700px;
+    height: 500px;
+    /* altura fija */
+    overflow: hidden;
     background-color: rgb(29, 29, 49);
     /*border: 1px solid rgba(30, 221, 30, 0.977);*/
     /*box-shadow: 0 0 100px rgb(30, 221, 30, 0.5);*/
     border-radius: 10px;
 }
 
-.title-bar{
+.title-bar {
     width: 100%;
     height: 12%;
     display: flex;
     flex-direction: row;
     background-color: rgb(21, 21, 35);
 }
-.window-controls{
-    width:15% ;
+
+.window-controls {
+    width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 14px;
 }
+
 .btn-close,
 .btn-min,
-.btn-max{
+.btn-max {
     width: 15px;
     height: 15px;
     border-radius: 50%;
 }
 
-.close{
+.close {
     background-color: red;
 }
-.min{
+
+.min {
     background-color: yellow;
 }
-.max{
+
+.max {
     background-color: rgb(3, 253, 3);
 }
 
-.terminal-title{
+.terminal-title {
     width: 85%;
     display: flex;
     align-items: center;
@@ -136,28 +145,83 @@
     color: rgb(0, 255, 0);
 }
 
-.terminal-body{
+.terminal-body {
     height: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 100%;
     gap: 5px;
     padding-left: 40px;
     padding-top: 20px;
-}
-.comand{
-    color: rgb(0,255,0);
+    word-wrap: break-word;
 }
 
-.com-miss{
+.comand {
+    color: rgb(0, 255, 0);
+}
+
+.com-miss {
     color: rgb(213, 68, 213);
 }
 
 
 
-.blink{
+.blink {
     animation: blink 1s infinite;
 }
+
 @keyframes blink {
-  50% { opacity: 0; }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/* */
+
+/* 💻 Pantallas grandes (todo visible) */
+@media (min-width: 1641px) {
+    .hero-logo {
+        display: flex;
+    }
+}
+
+/* 💻 Laptop / pantallas medianas */
+@media (max-width: 1640px) {
+    .hero-logo {
+        display: none;
+    }
+
+    .hero {
+        width: 75%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+    .hero-description{
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-tech {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .hero {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-description {
+        display: none;
+    }
 }

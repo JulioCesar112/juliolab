@@ -12,7 +12,7 @@ const Home = () => {
       <div className="hero">
 
         <h1 className="hero-title">
-          Hola, soy <span className="hero-name">Julio Cesar</span>
+          Hola,soy <span className="hero-name">Julio Cesar</span>
         </h1>
 
         <h4 className="hero-subtitle">
@@ -21,7 +21,7 @@ const Home = () => {
 
         <p className="hero-description">
           Este es mi laboratorio digital donde construyo, experimento y comparto lo que aprendo
-sobre backend, Linux y desarrollo. Todo lo que ves aquí forma parte de mi proceso.
+          sobre backend, Linux y desarrollo. Todo lo que ves aquí forma parte de mi proceso.
         </p>
 
         <ul className="hero-tech">

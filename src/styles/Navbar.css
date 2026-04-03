@@ -6,7 +6,9 @@
   margin-top: 20px;
 
 }
-
+.menu-burger{
+  display: none;
+}
 .navbar-logo-container {
   display: flex;
   justify-content:center;
@@ -87,4 +89,27 @@
 .navbar-icons-btn:hover {
   box-shadow: 0 0 12px #22C55E;
   transform: scale(1.05);
+}
+
+
+/* 📱 Tablet / celular */
+@media (max-width: 1060px) {
+    .navbar-logo-container{
+      width: 50%;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .navbar-icons{
+      display: none;
+    }
+    .menu-burger{
+      display: flex;
+      width: 50%;
+      align-items: center;
+      justify-content: end;
+      font-size: 35px;
+      padding-right: 5%;
+      cursor: pointer;
+    }
 }

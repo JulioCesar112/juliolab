@@ -3,6 +3,7 @@ import "../styles/Navbar.css"
 import { ImLab } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
 import { MdDarkMode } from "react-icons/md";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   return (
@@ -26,6 +27,7 @@ const Navbar = () => {
         <FaGithub className="navbar-icons-github" />
         <button className="navbar-icons-btn">Contacto</button>
       </div>
+      <div className="menu-burger"><GiHamburgerMenu /></div>
     </nav>
   );
 };
