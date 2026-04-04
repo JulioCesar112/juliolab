@@ -4,8 +4,16 @@ import { ImLab } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
 import { MdDarkMode } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
+import { IoCloseSharp } from "react-icons/io5";
 
 const Navbar = () => {
+
+  const [open, setOpen] = useState(false)
+
+
+
+
   return (
     <nav className="navbar">
 
@@ -27,7 +35,14 @@ const Navbar = () => {
         <FaGithub className="navbar-icons-github" />
         <button className="navbar-icons-btn">Contacto</button>
       </div>
-      <div className="menu-burger"><GiHamburgerMenu /></div>
+      <div className="menu-btn" onClick={() => setOpen(!open) }><GiHamburgerMenu /></div>
+      <div className={`menu ${ open ? "active": ""}`}>
+        <div className="btn-close" onClick={() => setOpen(!open)}><IoCloseSharp /></div>
+        <Link>Inicio</Link>
+        <Link>Proyectos</Link>
+        <Link>Tutoriales</Link>
+        <Link>Sobre mi</Link>
+      </div>
     </nav>
   );
 };
