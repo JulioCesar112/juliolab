@@ -6,28 +6,25 @@
 
 .home {
     flex: 1;
-    /* ocupa todo el espacio que sobra debajo del navbar */
     display: flex;
     flex-wrap: wrap;
-    /* para dividir hero y hero-logo en fila */
-    overflow: hidden;
     justify-content: center;
 }
+
+/* ================= HERO ================= */
 
 .hero {
     width: 45%;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
-    padding-left: 100px;
+    padding-left: clamp(20px, 5vw, 100px);
     gap: 20px;
-
 }
 
 .hero-title {
-    font-size: 50px;
-
+    font-size: clamp(28px, 5vw, 50px);
 }
 
 .hero-title span {
@@ -35,75 +32,63 @@
 }
 
 .hero-subtitle {
-    font-size: 35px;
+    font-size: clamp(20px, 3vw, 35px);
 }
 
 .hero-description {
-    font-size: 25px;
+    font-size: clamp(16px, 2vw, 25px);
 }
 
 .hero-tech {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 40px;
     width: 100%;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .tech-item {
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     gap: 9px;
     background-color: rgb(29, 29, 49);
-    padding: 14px;
+    padding: 12px;
     border-radius: 6px;
 }
 
-.react svg {
-    color: #61dafb;
-}
+/* ICONOS */
+.react svg { color: #61dafb; }
+.javascript svg { color: #f7df1e; }
+.node svg { color: #68a063; }
+.database svg { color: #f29111; }
 
-.javascript svg {
-    color: #f7df1e;
-}
-
-.node svg {
-    color: #68a063;
-}
-
-.database svg {
-    color: #f29111;
-}
-
-/* hero logo */
-
+/* ================= HERO LOGO ================= */
 
 .hero-logo {
     width: 55%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 45px;
+    padding-left: clamp(10px, 3vw, 45px);
 }
 
 .terminal {
     width: 100%;
     max-width: 700px;
     height: 500px;
-    /* altura fija */
     overflow: hidden;
     background-color: rgb(29, 29, 49);
-    /*border: 1px solid rgba(30, 221, 30, 0.977);*/
-    /*box-shadow: 0 0 100px rgb(30, 221, 30, 0.5);*/
     border-radius: 10px;
 }
+
+/* ================= TERMINAL ================= */
 
 .title-bar {
     width: 100%;
     height: 12%;
     display: flex;
-    flex-direction: row;
     background-color: rgb(21, 21, 35);
 }
 
@@ -123,17 +108,9 @@
     border-radius: 50%;
 }
 
-.close {
-    background-color: red;
-}
-
-.min {
-    background-color: yellow;
-}
-
-.max {
-    background-color: rgb(3, 253, 3);
-}
+.close { background-color: red; }
+.min { background-color: yellow; }
+.max { background-color: rgb(3, 253, 3); }
 
 .terminal-title {
     width: 85%;
@@ -149,79 +126,53 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 18px;
     gap: 5px;
-    padding-left: 40px;
+    padding-left: 20px;
     padding-top: 20px;
     word-wrap: break-word;
 }
 
-.comand {
-    color: rgb(0, 255, 0);
-}
-
-.com-miss {
-    color: rgb(213, 68, 213);
-}
-
-
+.comand { color: rgb(0, 255, 0); }
+.com-miss { color: rgb(213, 68, 213); }
 
 .blink {
     animation: blink 1s infinite;
 }
 
 @keyframes blink {
-    50% {
-        opacity: 0;
-    }
+    50% { opacity: 0; }
 }
 
+/* ================= RESPONSIVE ================= */
 
-/* */
+/* 💻 Laptop y arriba → TODO NORMAL (no tocar) */
 
-/* 💻 Pantallas grandes (todo visible) */
-@media (min-width: 1641px) {
-    .hero-logo {
-        display: flex;
-    }
-}
 
-/* 💻 Laptop / pantallas medianas */
-@media (max-width: 1640px) {
+/* 📱 Tablet y menor → ocultar terminal */
+@media (max-width: 1024px) {
+
     .hero-logo {
         display: none;
     }
 
     .hero {
-        width: 75%;
+        width: 90%;
         padding: 0;
-        display: flex;
         align-items: center;
-        justify-content: center;
         text-align: center;
+    }
 
-    }
-    .hero-description{
-        justify-content: center;
-        align-items: center;
-    }
     .hero-tech {
-        flex-wrap: wrap;
-        gap: 12px;
+        justify-content: center;
     }
 }
 
-@media (max-width: 1060px) {
-    .hero {
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+/* 📱 Mobile */
+@media (max-width: 768px) {
 
     .hero-description {
         display: none;
     }
+
 }
