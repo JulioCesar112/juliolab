@@ -150,7 +150,7 @@
 
 
 /* 📱 Tablet y menor → ocultar terminal */
-@media (max-width: 1024px) {
+@media (max-width: 1062px) {
 
     .hero-logo {
         display: none;
